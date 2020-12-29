@@ -1,0 +1,15 @@
+This keyword :It is used to refer to the current class. class to refer to its own properties and methods.
+   
+ Create an Array of classes
+
+packet pkt[4];
+
+Ex: pkt[0] = new();
+	pkt[1] = new();
+	pkt[2] = new();
+	pkt[3] = new();
+
+Inheritance : It inherits the method and properties of the parent class using super keyword.
+  
+  Abstract/Virtual class: Virtual Class annot create an object.
+    
