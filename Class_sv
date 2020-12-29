@@ -13,3 +13,10 @@ Inheritance : It inherits the method and properties of the parent class using su
   
   Abstract/Virtual class: Virtual Class annot create an object.
     
+what is class handle?
+	It can hold the handle to an object of the class.
+	packet pkt;
+	
+what is class object?
+	To create an object of the class handle.
+	pkt = new();
