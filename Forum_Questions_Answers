@@ -1,0 +1,17 @@
+1) Initializing a multi-dimentional array to all zeros
+
+module tb;
+  //logic arr[3][4]; //array  ='{'{'hx, 'hx, 'hx, 'hx}, '{'hx, 'hx, 'hx, 'hx}, '{'hx, 'hx, 'hx, 'hx}} 
+         //  V C S   S i m u l a t i o n   R e p o r t 
+  logic arr[3][4] = '{default:0};
+  
+  initial
+    begin
+  	 $display("array  =%p",arr);
+    end
+  
+endmodule
+
+
+array  ='{'{'h0, 'h0, 'h0, 'h0}, '{'h0, 'h0, 'h0, 'h0}, '{'h0, 'h0, 'h0, 'h0}} 
+           V C S   S i m u l a t i o n   R e p o r t 
