@@ -75,3 +75,15 @@ class Sum_Alt ;
  
  Success with '{N:4, M:15, A:'{'h1, 'h7, 'h1, 'h6} , A_helper:'{'h1, 'h8, 'h9, 'hf} }
            V C S   S i m u l a t i o n   R e p o r t 
+
+
+3) Connecting multiple instances of interface with multiple clock
+If you change the clock from an unpacked to packed array, you can do
+
+bit [0: num_ins-1] clk;
+bus if_[2](clk); // clk[0] goes to if_[0] and clk[1] goes to if_[1] 
+Or you can use a generate loop instead of an array of instances
+
+for(genvar i=0; i<num_ins;i++) begin: block
+  bus if_(clk[i]); // clk[0] goes to block[0].if_ and clk[1] goes to block[1].if_
+end
